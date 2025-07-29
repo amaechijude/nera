@@ -3,9 +3,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import { AppSidebar } from "@/components/app-sidebar";
-import { Topbar } from "@/components/Topbar";
+// import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+// import { AppSidebar } from "@/components/app-sidebar";
+// import { Topbar } from "@/components/Topbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,16 +38,16 @@ export default function RootLayout({
           enableSystem={false}
           disableTransitionOnChange
         >
-          <SidebarProvider>
+          {/* <SidebarProvider>
             <AppSidebar />
             <SidebarTrigger />
             <main className="flex-1">
               <Topbar />
-              <div className="p-4">
+              <div className="p-4"> */}
                 {children}
-              </div>
+              {/* </div>
             </main>
-          </SidebarProvider>
+          </SidebarProvider> */}
         </ThemeProvider>
       </body>
     </html>
