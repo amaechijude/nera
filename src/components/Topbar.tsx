@@ -38,7 +38,7 @@ export function Topbar() {
           {/* Right side icons */}
           <div className="flex items-center space-x-4">
             <Button
-              className="p-2 hover:bg-accent rounded-full"
+              className="p-2 rounded-full"
               aria-label="Notifications"
               title="Notifications"
             >
