@@ -1,17 +1,13 @@
-import { Sidebar } from "@/components/dashboard/Sidebar";
-import { Header } from "@/components/dashboard/Header";
 import { StatsCard } from "@/components/dashboard/StatsCard";
 import { LiveMap } from "@/components/dashboard/LiveMap";
 import { AnalyticsChart } from "@/components/dashboard/AnalyticsChart";
 import { ScheduledBroadcasts } from "@/components/dashboard/ScheduledBroadcasts";
 import { CitizenFeedback } from "@/components/dashboard/CitizenFeedback";
 import { Users, UserCheck, MapPin, Truck } from "lucide-react";
+import { ChartLineMultiple } from "@/components/dashboard/LineChart";
 
 export default function Index() {
   return (
-
-      <div className="flex-1 flex flex-col overflow-hidden">
-        <Header />
 
         <main className="flex-1 overflow-y-auto p-6">
           <div className="max-w-7xl mx-auto space-y-6">
@@ -65,7 +61,7 @@ export default function Index() {
 
               {/* Analytics Chart */}
               <div>
-                <AnalyticsChart />
+                <ChartLineMultiple />
               </div>
             </div>
 
@@ -83,6 +79,5 @@ export default function Index() {
             </div>
           </div>
         </main>
-      </div>
   );
 };

@@ -2,6 +2,7 @@ import { Search, Bell, Moon } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { ModeToggle } from "../ModeToggle";
 
 export function Header() {
   return (
@@ -20,11 +21,9 @@ export function Header() {
         <Button variant="ghost" size="icon">
           <Bell className="h-5 w-5" />
         </Button>
-        <Button variant="ghost" size="icon">
-          <Moon className="h-5 w-5" />
-        </Button>
+        <ModeToggle />
         <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" />
+          <AvatarImage src={"/donate.jpg"} />
           <AvatarFallback>OK</AvatarFallback>
         </Avatar>
       </div>

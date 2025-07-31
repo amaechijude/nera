@@ -13,6 +13,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { toast } from "sonner";
+import Link from "next/link";
 
 const navigation = [
   { name: "Dashboard", icon: LayoutDashboard, current: true, href: "/" },
@@ -27,13 +28,17 @@ export function Sidebar() {
     <div className="flex h-screen w-64 flex-col bg-sidebar">
       {/* Logo */}
       <div className="flex items-center gap-3 px-6 py-6">
-        <Image
-          src={"/Logo.png"}
-          alt="Nera Logo"
-          width={160}
-          height={66}
-          aria-label="the logo"
-        />
+        <Link
+        href={"/"}
+        >
+          <Image
+            src={"/Logo.png"}
+            alt="Nera Logo"
+            width={160}
+            height={66}
+            aria-label="the logo"
+          />
+        </Link>
       </div>
 
       {/* Navigation */}
