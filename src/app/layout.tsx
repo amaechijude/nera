@@ -1,8 +1,9 @@
 import { ThemeProvider } from "@/components/theme-provider";
-// import { Side}
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
+import { Sidebar } from "@/components/dashboard/Sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,8 +36,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="flex h-screen bg-background">
+            <Sidebar />
+            {children}
+          </div>
         </ThemeProvider>
+        <Toaster />
       </body>
     </html>
   );

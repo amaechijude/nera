@@ -9,8 +9,6 @@ import { Users, UserCheck, MapPin, Truck } from "lucide-react";
 
 export default function Index() {
   return (
-    <div className="flex h-screen bg-background">
-      <Sidebar />
 
       <div className="flex-1 flex flex-col overflow-hidden">
         <Header />
@@ -86,6 +84,5 @@ export default function Index() {
           </div>
         </main>
       </div>
-    </div>
   );
 };
