@@ -5,6 +5,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import { Sidebar } from "@/components/dashboard/Sidebar";
 import { Header } from "@/components/dashboard/Header";
+import { MobileSidebar } from "@/components/dashboard/MobileSidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({
         >
           <div className="flex h-screen bg-background">
             <Sidebar />
+            <MobileSidebar />
             <div className="flex-1 flex flex-col overflow-hidden">
               <Header />
               {children}

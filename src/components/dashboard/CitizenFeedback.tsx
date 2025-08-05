@@ -7,30 +7,30 @@ const feedbacks = [
   {
     name: "Moses Blessing",
     location: "Nnewi North",
-    avatar: "/lovable-uploads/9b499030-a443-4eaa-bf6e-d2734c00fd13.png"
+    avatar: "/donate.jpg"
   },
   {
     name: "Moses Blessing", 
     location: "Nnewi North",
-    avatar: "/lovable-uploads/9b499030-a443-4eaa-bf6e-d2734c00fd13.png"
+    avatar: "/donate.jpg"
   },
   {
     name: "Moses Blessing",
     location: "Nnewi North", 
-    avatar: "/lovable-uploads/9b499030-a443-4eaa-bf6e-d2734c00fd13.png"
+    avatar: "/donate.jpg"
   }
 ];
 
 export function CitizenFeedback() {
   return (
     <Card className="shadow-card">
-      <CardHeader className="flex flex-row items-center justify-between">
-        <CardTitle className="text-lg font-semibold">Citizen Feedback</CardTitle>
+      <CardHeader className="flex flex-row items-center justify-between p-4 md:p-6">
+        <CardTitle className="text-base md:text-lg font-semibold">Citizen Feedback</CardTitle>
         <Button variant="outline" size="sm" className="text-xs">
           View all <ChevronDown className="ml-1 h-3 w-3" />
         </Button>
       </CardHeader>
-      <CardContent className="space-y-4">
+      <CardContent className="space-y-4 p-4 md:p-6">
         {feedbacks.map((feedback, index) => (
           <div key={index} className="flex items-center justify-between">
             <div className="flex items-center gap-3">

@@ -1,6 +1,5 @@
 import { StatsCard } from "@/components/dashboard/StatsCard";
 import { LiveMap } from "@/components/dashboard/LiveMap";
-import { AnalyticsChart } from "@/components/dashboard/AnalyticsChart";
 import { ScheduledBroadcasts } from "@/components/dashboard/ScheduledBroadcasts";
 import { CitizenFeedback } from "@/components/dashboard/CitizenFeedback";
 import { Users, UserCheck, MapPin, Truck } from "lucide-react";

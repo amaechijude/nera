@@ -22,7 +22,7 @@ export function LiveMap() {
         </div> */}
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.661214272678!2d6.8952018!3d6.0411383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104397a2734440ef%3A0xe5b226e48b96ad2b!2sICE%20INNOVATION%20HUB!5e0!3m2!1sen!2sng!4v1753786032039!5m2!1sen!2sng"
-          width="700"
+          width="100%"
           height="400"
           style={{ border: 0 }}
           allowFullScreen={true}

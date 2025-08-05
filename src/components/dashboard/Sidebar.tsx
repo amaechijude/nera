@@ -14,18 +14,21 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { toast } from "sonner";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navigation = [
-  { name: "Dashboard", icon: LayoutDashboard, current: true, href: "/" },
-  { name: "User", icon: Users, current: false, href: "/user" },
-  { name: "Staff", icon: UserCheck, current: false, href: "/staff" },
-  { name: "Dropoff", icon: MapPin, current: false, href: "/dropoff"  },
-  { name: "Trucks", icon: Truck, current: false, href: "/trucks" },
+  { name: "Dashboard", icon: LayoutDashboard, href: "/" },
+  { name: "User", icon: Users, href: "/user" },
+  { name: "Staff", icon: UserCheck, href: "/staff" },
+  { name: "Dropoff", icon: MapPin, href: "/dropoff"  },
+  { name: "Trucks", icon: Truck, href: "/trucks" },
 ];
 
 export function Sidebar() {
+  const pathname = usePathname();
+
   return (
-    <div className="flex h-screen w-64 flex-col bg-sidebar">
+    <div className="hidden md:flex h-screen w-64 flex-col bg-sidebar">
       {/* Logo */}
       <div className="flex items-center gap-3 px-6 py-6">
         <Link
@@ -46,10 +49,10 @@ export function Sidebar() {
         {navigation.map((item) => (
           <a key={item.name} href={item.href}>
             <Button
-              variant={item.current ? "default" : "ghost"}
+              variant={pathname === item.href ? "default" : "ghost"}
               className={cn(
                 "w-full justify-start gap-3 text-sidebar-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground",
-                item.current &&
+                pathname === item.href &&
                   "bg-primary text-primary-foreground hover:bg-primary/90"
               )}
             >
