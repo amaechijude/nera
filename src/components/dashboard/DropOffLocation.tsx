@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { ChevronDown } from "lucide-react";
-import { LGAData } from "@/data/lga";
+import { LGAData } from "../../data/lga"; 
 
 export function DropOffLocation() {
   const [search, setSearch] = useState("");

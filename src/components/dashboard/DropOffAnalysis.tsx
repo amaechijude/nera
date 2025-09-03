@@ -1,5 +1,4 @@
 import { ArrowUpRight, Users, User, Truck, Box } from "lucide-react";
-import { StatsCard } from "./StatsCard";
 
 export function DropOffAnalysis() {
   return (
